@@ -158,7 +158,7 @@ function rows(p) {
     { label: "Sales this year", note: p.year, get: r => r.sales.year.amount, show: money, sub: r => sold(r.sales.year.count) },
     { cls: "group", label: "Avg ticket", note: p.quarter, get: r => r.avg_ticket.quarter, show: money, sub: r => sold(r.sales.quarter.count) },
     { label: "Avg ticket", note: p.year, get: r => r.avg_ticket.year, show: money, sub: r => sold(r.sales.year.count) },
-    { cls: "group", label: "Gross profit", note: p.year, get: r => r.gp.amount, show: money, sub: r => "GP% " + Math.round(r.gp.pct * 100) + "%" },
+    { cls: "group", label: "Gross profit %", note: p.year, get: r => r.gp.pct, show: pct },
     { cls: "group", label: "Sits", note: p.sits, get: r => r.sits, show: v => v.toLocaleString("en-US") }
   ];
 }
