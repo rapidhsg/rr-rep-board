@@ -151,15 +151,14 @@ const $ = id => document.getElementById(id);
 
 function rows(p) {
   return [
-    { cls: "close group", label: "Close rate", note: p.close_rate, get: r => r.close_rate, show: pct },
+    { cls: "close group", label: "Close rate", note: p.close_rate, get: r => r.close_rate, show: pct, sub: r => r.close_counts.demos + " demos · " + r.close_counts.approved + " sold" },
     { cls: "group", label: "Sales this week", note: p.week, get: r => r.sales.week.amount, show: money, sub: r => sold(r.sales.week.count) },
     { label: "Sales this month", note: p.month, get: r => r.sales.month.amount, show: money, sub: r => sold(r.sales.month.count) },
     { label: "Sales this quarter", note: p.quarter, get: r => r.sales.quarter.amount, show: money, sub: r => sold(r.sales.quarter.count) },
     { label: "Sales this year", note: p.year, get: r => r.sales.year.amount, show: money, sub: r => sold(r.sales.year.count) },
     { cls: "group", label: "Avg ticket", note: p.quarter, get: r => r.avg_ticket.quarter, show: money, sub: r => sold(r.sales.quarter.count) },
     { label: "Avg ticket", note: p.year, get: r => r.avg_ticket.year, show: money, sub: r => sold(r.sales.year.count) },
-    { cls: "group", label: "Gross profit %", note: p.year, get: r => r.gp.pct, show: pct },
-    { cls: "group", label: "Sits", note: p.sits, get: r => r.sits, show: v => v.toLocaleString("en-US") }
+    { cls: "group", label: "Gross profit %", note: p.year, get: r => r.gp.pct, show: pct }
   ];
 }
 
