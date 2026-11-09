@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Rep Board | Rapid Roofing</title>
+<style>
+  @font-face { font-family: "Barlow Condensed"; font-weight: 600; font-style: normal; font-display: swap; src: url("assets/fonts/barlow-condensed-600.woff2") format("woff2"); }
+  @font-face { font-family: "Barlow Condensed"; font-weight: 800; font-style: normal; font-display: swap; src: url("assets/fonts/barlow-condensed-800.woff2") format("woff2"); }
+  @font-face { font-family: "Barlow Condensed"; font-weight: 900; font-style: normal; font-display: swap; src: url("assets/fonts/barlow-condensed-900.woff2") format("woff2"); }
+  @font-face { font-family: "Inter"; font-weight: 400 700; font-style: normal; font-display: swap; src: url("assets/fonts/inter-var.woff2") format("woff2"); }
+
+  /* Rapid Roofing Design System V2 tokens */
+  :root {
+    --rapid-red: #FF0000;
+    --pitch-black: #000000;
+    --flash-yellow: #FFFF00;
+    --solar-white: #FFFFFF;
+    --page: #F4F2F0;
+    --rule: #E3E1DE;
+    --steel: #777777;
+    --zero: #B8B5B1;
+    --success: #12A148;
+    --success-ink: #0B7A33;
+    --success-tint: #EAF6EE;
+    --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+    --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: var(--page); color: var(--pitch-black); font-family: var(--body); min-height: 100vh; display: flex; flex-direction: column; }
+
+  /* Brand header (matches Scoreboard / Thermometer) */
+  .brand {
+    background: var(--rapid-red); color: var(--solar-white);
+    display: flex; align-items: center; gap: 28px; flex-wrap: wrap;
+    padding: max(16px, env(safe-area-inset-top)) 28px 16px;
+  }
+  .brand img { height: 40px; width: auto; display: block; }
+  .brand h1 { margin: 0; font-family: var(--display); font-weight: 900; font-size: 28px; text-transform: uppercase; letter-spacing: .01em; line-height: 1; }
+  .chips { margin-left: auto; display: flex; gap: 10px; align-items: stretch; }
+  .chip { background: var(--flash-yellow); color: var(--pitch-black); border: 2px solid var(--pitch-black); display: flex; align-items: center; }
+  .chip .cell { padding: 5px 12px; display: flex; flex-direction: column; justify-content: center; }
+  .chip .cell + .cell { border-left: 2px solid var(--pitch-black); }
+  .chip small { font-family: var(--display); font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; }
+  .chip b { font-family: var(--display); font-weight: 900; font-size: 17px; line-height: 1.05; }
+  .chip.qtr b { font-size: 20px; padding: 0 14px; }
+
+  /* Period strip */
+  .strip { background: var(--pitch-black); color: var(--solar-white); display: grid; grid-template-columns: repeat(4, 1fr); }
+  .strip div { text-align: center; padding: 9px 8px; border-left: 1px solid #333; }
+  .strip div:first-child { border-left: 0; }
+  .strip small { display: block; font-family: var(--display); font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .1em; color: #BDBDBD; }
+  .strip b { font-family: var(--display); font-weight: 800; font-size: 18px; text-transform: uppercase; }
+
+  main { flex: 1; padding: 20px 28px 24px; }
+  .sample { display: none; margin: 0 0 14px; }
+  .sample.show { display: inline-block; background: var(--flash-yellow); padding: 6px 12px; font-family: var(--display); font-weight: 800; font-size: 14px; text-transform: uppercase; letter-spacing: .03em; }
+
+  .wrap { background: var(--solar-white); outline: 1px solid var(--rule); overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 1000px; }
+  th, td { padding: 12px 12px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--rule); }
+  thead th {
+    background: var(--pitch-black); color: var(--solar-white); border-bottom: 0;
+    font-family: var(--display); font-weight: 800; font-size: 17px; text-transform: uppercase; line-height: 1.05; vertical-align: bottom; padding-top: 14px; padding-bottom: 12px;
+  }
+  thead th.team { color: var(--flash-yellow); }
+  th.metric, td.metric { text-align: left; position: sticky; left: 0; z-index: 1; min-width: 170px; border-right: 1px solid var(--rule); }
+  td.metric { background: var(--solar-white); }
+  thead th.metric { background: var(--pitch-black); border-right-color: #333; font-size: 11px; letter-spacing: .1em; }
+  td.metric b { display: block; font-family: var(--display); font-weight: 800; font-size: 18px; text-transform: uppercase; line-height: 1.05; }
+  td.metric small { color: var(--steel); font-size: 12px; }
+  tr.group td { border-top: 3px solid var(--pitch-black); }
+  tbody tr:first-child td { border-top: 0; }
+
+  .num { font-family: var(--display); font-weight: 800; font-size: 26px; line-height: 1; font-variant-numeric: tabular-nums; }
+  .sub { display: block; color: var(--steel); font-size: 12px; margin-top: 3px; }
+  td.zero .num { color: var(--zero); }
+  td.lead { background: linear-gradient(90deg, var(--success-tint), #F6FBF8); box-shadow: inset 3px 0 0 var(--success); }
+  td.lead .num { color: var(--success-ink); }
+  .badge { display: inline-block; background: var(--success-ink); color: var(--solar-white); font-family: var(--display); font-weight: 800; font-size: 9px; letter-spacing: .08em; text-transform: uppercase; padding: 2px 5px; margin-right: 6px; vertical-align: 1px; }
+
+  td.team { background: var(--pitch-black); color: var(--solar-white); border-bottom-color: #2A2A2A; }
+  td.team .sub { color: #BDBDBD; }
+  tr.close td.team .num { color: var(--flash-yellow); }
+  tr.group td.team { border-top-color: var(--rapid-red); }
+
+  footer {
+    background: var(--pitch-black); color: var(--solar-white); border-top: 3px solid var(--flash-yellow);
+    display: flex; align-items: center; gap: 28px; flex-wrap: wrap;
+    padding: 10px 28px max(10px, env(safe-area-inset-bottom));
+    font-family: var(--display); font-weight: 800; font-size: 13px; text-transform: uppercase; letter-spacing: .04em;
+  }
+  footer small { color: #9A9A9A; font-size: 10px; letter-spacing: .1em; margin-right: 8px; }
+  footer img { height: 22px; margin-left: auto; display: block; }
+
+  @media (max-width: 720px) {
+    .brand { gap: 14px; padding-left: 16px; padding-right: 16px; }
+    .chips { margin-left: 0; }
+    .strip { grid-template-columns: repeat(2, 1fr); }
+    main { padding: 14px 12px; }
+  }
+  @media print {
+    @page { size: letter landscape; margin: 0.3in; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { min-height: 0; }
+    .wrap { overflow: visible; }
+    table { min-width: 0; }
+    .wrap { outline: 0; }
+    th, td { padding: 8px 8px; }
+    th.metric, td.metric { position: static; min-width: 0; }
+    .num { font-size: 19px; }
+    thead th { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+<header class="brand">
+  <img src="assets/rapid-logo-white.png" alt="Rapid Roofing">
+  <h1>Rep Board</h1>
+  <div class="chips">
+    <div class="chip"><div class="cell"><small>AccuLynx data</small><b id="asof">–</b></div></div>
+    <div class="chip qtr"><b id="qtr">–</b></div>
+  </div>
+</header>
+<div class="strip">
+  <div><small>Week</small><b id="p-week">–</b></div>
+  <div><small>Month</small><b id="p-month">–</b></div>
+  <div><small>Quarter</small><b id="p-quarter">–</b></div>
+  <div><small>Year</small><b id="p-year">–</b></div>
+</div>
+
+<main>
+  <div class="sample" id="sample">Sample numbers. Live AccuLynx numbers appear once the data feed is connected.</div>
+  <div class="wrap"><table id="board"><tbody><tr><td class="metric">Loading the board…</td></tr></tbody></table></div>
+</main>
+
+<footer>
+  <span><small>Refreshed</small><span id="refreshed">–</span></span>
+  <span>Rapid Roofing · RHSG · Long Island, NY</span>
+  <img src="assets/rapid-r-white.png" alt="">
+</footer>
+
+<script>
+const money = n => "$" + Math.round(n).toLocaleString("en-US");
+const pct = n => (n * 100).toFixed(1) + "%";
+const sold = c => c + " sold";
+const $ = id => document.getElementById(id);
+
+function rows(p) {
+  return [
+    { cls: "close group", label: "Close rate", note: p.close_rate, get: r => r.close_rate, show: pct },
+    { cls: "group", label: "Sales this week", note: p.week, get: r => r.sales.week.amount, show: money, sub: r => sold(r.sales.week.count) },
+    { label: "Sales this month", note: p.month, get: r => r.sales.month.amount, show: money, sub: r => sold(r.sales.month.count) },
+    { label: "Sales this quarter", note: p.quarter, get: r => r.sales.quarter.amount, show: money, sub: r => sold(r.sales.quarter.count) },
+    { label: "Sales this year", note: p.year, get: r => r.sales.year.amount, show: money, sub: r => sold(r.sales.year.count) },
+    { cls: "group", label: "Avg ticket", note: p.quarter, get: r => r.avg_ticket.quarter, show: money, sub: r => sold(r.sales.quarter.count) },
+    { label: "Avg ticket", note: p.year, get: r => r.avg_ticket.year, show: money, sub: r => sold(r.sales.year.count) },
+    { cls: "group", label: "Gross profit", note: p.year, get: r => r.gp.amount, show: money, sub: r => "GP% " + Math.round(r.gp.pct * 100) + "%" },
+    { cls: "group", label: "Sits", note: p.sits, get: r => r.sits, show: v => v.toLocaleString("en-US") }
+  ];
+}
+
+function render(d) {
+  $("sample").classList.toggle("show", !!d.sample);
+  const t = new Date(d.updated);
+  $("asof").textContent = t.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+  $("refreshed").textContent = t.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+  $("qtr").textContent = d.periods.quarter;
+  $("p-week").textContent = d.periods.week;
+  $("p-month").textContent = d.periods.month;
+  $("p-quarter").textContent = d.periods.quarter + (d.periods.week_of_quarter ? " · Wk " + d.periods.week_of_quarter : "");
+  $("p-year").textContent = d.periods.year;
+
+  let h = "<thead><tr><th class='metric' scope='col'>Metric</th>";
+  d.reps.forEach(r => h += "<th scope='col'>" + r.name.replace(" ", "<br>") + "</th>");
+  h += "<th scope='col' class='team'>Team</th></tr></thead><tbody>";
+
+  rows(d.periods).forEach(row => {
+    const vals = d.reps.map(row.get);
+    const max = Math.max(...vals);
+    h += "<tr class='" + (row.cls || "") + "'><td class='metric'><b>" + row.label + "</b><small>" + row.note + "</small></td>";
+    d.reps.forEach((r, i) => {
+      const v = vals[i], lead = v === max && max > 0;
+      h += "<td class='" + (v === 0 ? "zero" : "") + (lead ? " lead" : "") + "'><span class='num'>" + row.show(v) + "</span>" +
+           (row.sub || lead ? "<span class='sub'>" + (lead ? "<span class='badge'>Top</span>" : "") + (row.sub ? row.sub(r) : "") + "</span>" : "") + "</td>";
+    });
+    h += "<td class='team'><span class='num'>" + row.show(row.get(d.team)) + "</span>" +
+         (row.sub ? "<span class='sub'>" + row.sub(d.team) + "</span>" : "") + "</td></tr>";
+  });
+  $("board").innerHTML = h + "</tbody>";
+}
+
+fetch("data/reps.json", { cache: "no-store" })
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(render)
+  .catch(() => { $("board").innerHTML = "<tbody><tr><td class='metric'>Couldn't load data/reps.json. Check that this morning's refresh job ran.</td></tr></tbody>"; });
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+name: Refresh rep board
+on:
+  schedule:
+    - cron: "0 11 * * *"   # 7:00 AM Eastern (EDT)
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build data/reps.json from rr-metrics-data
+        env:
+          GH_TOKEN: ${{ secrets.RR_METRICS_READ_TOKEN }}   # read-only token for rapidhsg/rr-metrics-data
+        run: python build_reps.py
+      - name: Commit new numbers
+        run: |
+          git config user.name "rep-board-bot"
+          git config user.email "rep-board-bot@users.noreply.github.com"
+          git add data/reps.json
+          git diff --cached --quiet || git commit -m "Refresh rep board numbers"
+          git push
