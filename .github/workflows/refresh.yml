@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Install pandas (needed by rr_metrics.py)
+        run: pip install pandas
       - name: Build data/reps.json from rr-metrics-data
         env:
           GH_TOKEN: ${{ secrets.RR_METRICS_READ_TOKEN }}   # read-only token for rapidhsg/rr-metrics-data
