@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-10T08:04:28-05:00",
+  "updated": "2026-11-10T14:04:04-05:00",
   "periods": {
     "week": "Nov 9 \u2013 Nov 15",
     "month": "November",
@@ -13,12 +13,12 @@
   "reps": [
     {
       "name": "Mike Dietrich",
-      "close_rate": 0.3636,
+      "close_rate": 0.3596,
       "close_counts": {
         "approved": 32,
-        "demos": 88
+        "demos": 89
       },
-      "sits": 88,
+      "sits": 89,
       "sales": {
         "week": {
           "amount": 0,
@@ -83,12 +83,12 @@
     },
     {
       "name": "Joe Young",
-      "close_rate": 0.1667,
+      "close_rate": 0.1644,
       "close_counts": {
         "approved": 12,
-        "demos": 72
+        "demos": 73
       },
-      "sits": 72,
+      "sits": 73,
       "sales": {
         "week": {
           "amount": 0,
@@ -153,28 +153,28 @@
     },
     {
       "name": "Daniel Leverich",
-      "close_rate": 0.1333,
+      "close_rate": 0.2,
       "close_counts": {
-        "approved": 2,
+        "approved": 3,
         "demos": 15
       },
       "sits": 15,
       "sales": {
         "week": {
-          "amount": 0,
-          "count": 0
-        },
-        "month": {
-          "amount": 30773,
+          "amount": 20000,
           "count": 1
         },
-        "quarter": {
-          "amount": 59776,
+        "month": {
+          "amount": 50773,
           "count": 2
         },
+        "quarter": {
+          "amount": 79776,
+          "count": 3
+        },
         "year": {
-          "amount": 59776,
-          "count": 2
+          "amount": 79776,
+          "count": 3
         }
       },
       "gp": {
@@ -182,34 +182,34 @@
         "pct": 0
       },
       "avg_ticket": {
-        "quarter": 29888,
-        "year": 29888
+        "quarter": 26592,
+        "year": 26592
       }
     },
     {
       "name": "Leomar Santana",
-      "close_rate": 0.0909,
+      "close_rate": 0.1364,
       "close_counts": {
-        "approved": 2,
+        "approved": 3,
         "demos": 22
       },
       "sits": 22,
       "sales": {
         "week": {
-          "amount": 0,
-          "count": 0
+          "amount": 26000,
+          "count": 1
         },
         "month": {
-          "amount": 0,
-          "count": 0
+          "amount": 26000,
+          "count": 1
         },
         "quarter": {
-          "amount": 5037,
-          "count": 1
+          "amount": 31037,
+          "count": 2
         },
         "year": {
-          "amount": 5037,
-          "count": 1
+          "amount": 31037,
+          "count": 2
         }
       },
       "gp": {
@@ -217,34 +217,34 @@
         "pct": 0
       },
       "avg_ticket": {
-        "quarter": 5037,
-        "year": 5037
+        "quarter": 15518,
+        "year": 15518
       }
     }
   ],
   "team": {
-    "close_rate": 0.2734,
+    "close_rate": 0.2786,
     "close_counts": {
-      "approved": 76,
-      "demos": 278
+      "approved": 78,
+      "demos": 280
     },
-    "sits": 278,
+    "sits": 280,
     "sales": {
       "week": {
-        "amount": 3400,
-        "count": 1
+        "amount": 49400,
+        "count": 3
       },
       "month": {
-        "amount": 154012,
-        "count": 9
+        "amount": 200012,
+        "count": 11
       },
       "quarter": {
-        "amount": 1271411,
-        "count": 73
+        "amount": 1317411,
+        "count": 75
       },
       "year": {
-        "amount": 6730994,
-        "count": 372
+        "amount": 6776994,
+        "count": 374
       }
     },
     "gp": {
@@ -252,8 +252,8 @@
       "pct": 0.3562
     },
     "avg_ticket": {
-      "quarter": 17417,
-      "year": 18094
+      "quarter": 17565,
+      "year": 18120
     }
   }
 }
