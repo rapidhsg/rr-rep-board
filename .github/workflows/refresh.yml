@@ -1,8 +1,13 @@
 name: Refresh rep board
 on:
   schedule:
-    - cron: "0 11 * * *"   # 7:00 AM Eastern (EDT)
+    # About 1h40m after each AccuLynx run lands in rr-metrics-data (runs at 6, 9 AM, 12, 3, 6 PM Eastern).
+    # Eastern standard time: 6:45 AM, 9:45 AM, 12:45 PM, 3:45 PM, 6:45 PM. One hour later in daylight time.
+    - cron: "45 11,14,17,20,23 * * *"
   workflow_dispatch:
+concurrency:
+  group: refresh
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
@@ -23,4 +28,5 @@ jobs:
           git config user.email "rep-board-bot@users.noreply.github.com"
           git add data/reps.json
           git diff --cached --quiet || git commit -m "Refresh rep board numbers"
+          git pull --rebase
           git push
