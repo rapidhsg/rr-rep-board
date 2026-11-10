@@ -1,9 +1,7 @@
 name: Refresh rep board
 on:
   schedule:
-    # About 1h40m after each AccuLynx run lands in rr-metrics-data (runs at 6, 9 AM, 12, 3, 6 PM Eastern).
-    # Eastern standard time: 6:45 AM, 9:45 AM, 12:45 PM, 3:45 PM, 6:45 PM. One hour later in daylight time.
-    - cron: "45 11,14,17,20,23 * * *"
+    - cron: "2,17,32,47 * * * *"   # every 15 min, same as dashboard-engine (rr1/rr2); only commits when the numbers change
   workflow_dispatch:
 concurrency:
   group: refresh
