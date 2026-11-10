@@ -165,8 +165,8 @@ function rows(p) {
 function render(d) {
   $("sample").classList.toggle("show", !!d.sample);
   const t = new Date(d.updated);
-  $("asof").textContent = t.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
-  $("refreshed").textContent = t.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+  $("asof").textContent = t.toLocaleTimeString("en-US", { timeZone: "America/New_York", hour: "numeric", minute: "2-digit" });
+  $("refreshed").textContent = t.toLocaleDateString("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric" });
   $("qtr").textContent = d.periods.quarter;
   $("p-week").textContent = d.periods.week;
   $("p-month").textContent = d.periods.month;
