@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-09T05:05:11-05:00",
+  "updated": "2026-11-10T08:04:28-05:00",
   "periods": {
     "week": "Nov 9 \u2013 Nov 15",
     "month": "November",
@@ -13,37 +13,37 @@
   "reps": [
     {
       "name": "Mike Dietrich",
-      "close_rate": 0.3721,
+      "close_rate": 0.3636,
       "close_counts": {
         "approved": 32,
-        "demos": 86
+        "demos": 88
       },
-      "sits": 86,
+      "sits": 88,
       "sales": {
         "week": {
           "amount": 0,
           "count": 0
         },
         "month": {
-          "amount": 87980,
-          "count": 4
+          "amount": 64384,
+          "count": 3
         },
         "quarter": {
-          "amount": 598399,
-          "count": 31
+          "amount": 574803,
+          "count": 30
         },
         "year": {
-          "amount": 3043365,
-          "count": 199
+          "amount": 3019769,
+          "count": 198
         }
       },
       "gp": {
-        "amount": 1001097,
-        "pct": 0.3625
+        "amount": 1000937,
+        "pct": 0.3624
       },
       "avg_ticket": {
-        "quarter": 19303,
-        "year": 15293
+        "quarter": 19160,
+        "year": 15251
       }
     },
     {
@@ -83,12 +83,12 @@
     },
     {
       "name": "Joe Young",
-      "close_rate": 0.1714,
+      "close_rate": 0.1667,
       "close_counts": {
         "approved": 12,
-        "demos": 70
+        "demos": 72
       },
-      "sits": 70,
+      "sits": 72,
       "sales": {
         "week": {
           "amount": 0,
@@ -118,28 +118,28 @@
     },
     {
       "name": "Franco Querlim",
-      "close_rate": 0.2745,
+      "close_rate": 0.2941,
       "close_counts": {
-        "approved": 14,
+        "approved": 15,
         "demos": 51
       },
       "sits": 51,
       "sales": {
         "week": {
-          "amount": 0,
-          "count": 0
-        },
-        "month": {
-          "amount": 28255,
+          "amount": 3400,
           "count": 1
         },
+        "month": {
+          "amount": 31655,
+          "count": 2
+        },
         "quarter": {
-          "amount": 235857,
-          "count": 14
+          "amount": 239257,
+          "count": 15
         },
         "year": {
-          "amount": 239107,
-          "count": 15
+          "amount": 242507,
+          "count": 16
         }
       },
       "gp": {
@@ -147,18 +147,18 @@
         "pct": 0.3762
       },
       "avg_ticket": {
-        "quarter": 16847,
-        "year": 15940
+        "quarter": 15950,
+        "year": 15157
       }
     },
     {
       "name": "Daniel Leverich",
-      "close_rate": 0.1429,
+      "close_rate": 0.1333,
       "close_counts": {
         "approved": 2,
-        "demos": 14
+        "demos": 15
       },
-      "sits": 14,
+      "sits": 15,
       "sales": {
         "week": {
           "amount": 0,
@@ -188,12 +188,12 @@
     },
     {
       "name": "Leomar Santana",
-      "close_rate": 0.0952,
+      "close_rate": 0.0909,
       "close_counts": {
         "approved": 2,
-        "demos": 21
+        "demos": 22
       },
-      "sits": 21,
+      "sits": 22,
       "sales": {
         "week": {
           "amount": 0,
@@ -223,37 +223,37 @@
     }
   ],
   "team": {
-    "close_rate": 0.2757,
+    "close_rate": 0.2734,
     "close_counts": {
-      "approved": 75,
-      "demos": 272
+      "approved": 76,
+      "demos": 278
     },
-    "sits": 272,
+    "sits": 278,
     "sales": {
       "week": {
-        "amount": 0,
-        "count": 0
+        "amount": 3400,
+        "count": 1
       },
       "month": {
-        "amount": 174209,
+        "amount": 154012,
         "count": 9
       },
       "quarter": {
-        "amount": 1291607,
+        "amount": 1271411,
         "count": 73
       },
       "year": {
-        "amount": 6751190,
+        "amount": 6730994,
         "count": 372
       }
     },
     "gp": {
-      "amount": 1945942,
+      "amount": 1945782,
       "pct": 0.3562
     },
     "avg_ticket": {
-      "quarter": 17693,
-      "year": 18148
+      "quarter": 17417,
+      "year": 18094
     }
   }
 }
