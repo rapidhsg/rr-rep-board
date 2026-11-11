@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-10T17:04:05-05:00",
+  "updated": "2026-11-11T08:04:07-05:00",
   "periods": {
     "week": "Nov 9 \u2013 Nov 15",
     "month": "November",
@@ -21,19 +21,19 @@
       "sits": 89,
       "sales": {
         "week": {
-          "amount": 0,
+          "amount": 5600,
           "count": 1
         },
         "month": {
-          "amount": 64384,
+          "amount": 69984,
           "count": 4
         },
         "quarter": {
-          "amount": 574803,
+          "amount": 580403,
           "count": 31
         },
         "year": {
-          "amount": 3019769,
+          "amount": 3025369,
           "count": 199
         }
       },
@@ -42,8 +42,8 @@
         "pct": 0.3624
       },
       "avg_ticket": {
-        "quarter": 18542,
-        "year": 15175
+        "quarter": 18723,
+        "year": 15203
       }
     },
     {
@@ -108,8 +108,8 @@
         }
       },
       "gp": {
-        "amount": 326419,
-        "pct": 0.3311
+        "amount": 332363,
+        "pct": 0.3321
       },
       "avg_ticket": {
         "quarter": 14305,
@@ -231,29 +231,29 @@
     "sits": 282,
     "sales": {
       "week": {
-        "amount": 49400,
+        "amount": 55000,
         "count": 4
       },
       "month": {
-        "amount": 200012,
+        "amount": 205612,
         "count": 12
       },
       "quarter": {
-        "amount": 1317411,
+        "amount": 1323011,
         "count": 76
       },
       "year": {
-        "amount": 6776994,
+        "amount": 6782594,
         "count": 375
       }
     },
     "gp": {
-      "amount": 1945782,
-      "pct": 0.3562
+      "amount": 1951726,
+      "pct": 0.3563
     },
     "avg_ticket": {
-      "quarter": 17334,
-      "year": 18072
+      "quarter": 17408,
+      "year": 18087
     }
   }
 }
