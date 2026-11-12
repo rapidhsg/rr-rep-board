@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-12T08:04:15-05:00",
+  "updated": "2026-11-12T11:04:11-05:00",
   "periods": {
     "week": "Nov 9 \u2013 Nov 15",
     "month": "November",
@@ -13,28 +13,28 @@
   "reps": [
     {
       "name": "Mike Dietrich",
-      "close_rate": 0.3626,
+      "close_rate": 0.3696,
       "close_counts": {
-        "approved": 33,
-        "demos": 91
+        "approved": 34,
+        "demos": 92
       },
-      "sits": 91,
+      "sits": 92,
       "sales": {
         "week": {
-          "amount": 5600,
-          "count": 1
+          "amount": 8600,
+          "count": 2
         },
         "month": {
-          "amount": 69984,
-          "count": 4
+          "amount": 72984,
+          "count": 5
         },
         "quarter": {
-          "amount": 580404,
-          "count": 31
+          "amount": 583404,
+          "count": 32
         },
         "year": {
-          "amount": 3025370,
-          "count": 199
+          "amount": 3028370,
+          "count": 200
         }
       },
       "gp": {
@@ -42,18 +42,18 @@
         "pct": 0.3626
       },
       "avg_ticket": {
-        "quarter": 18723,
-        "year": 15203
+        "quarter": 18231,
+        "year": 15142
       }
     },
     {
       "name": "Francesco Ambrosio",
-      "close_rate": 0.4062,
+      "close_rate": 0.3939,
       "close_counts": {
         "approved": 13,
-        "demos": 32
+        "demos": 33
       },
-      "sits": 32,
+      "sits": 33,
       "sales": {
         "week": {
           "amount": 0,
@@ -83,47 +83,47 @@
     },
     {
       "name": "Joe Young",
-      "close_rate": 0.1867,
+      "close_rate": 0.1842,
       "close_counts": {
         "approved": 14,
-        "demos": 75
+        "demos": 76
       },
-      "sits": 75,
+      "sits": 76,
       "sales": {
         "week": {
-          "amount": 25438,
+          "amount": 43939,
           "count": 2
         },
         "month": {
-          "amount": 52639,
+          "amount": 71139,
           "count": 5
         },
         "quarter": {
-          "amount": 182795,
+          "amount": 201295,
           "count": 13
         },
         "year": {
-          "amount": 1195602,
+          "amount": 1214102,
           "count": 68
         }
       },
       "gp": {
-        "amount": 332363,
-        "pct": 0.3321
+        "amount": 332863,
+        "pct": 0.3326
       },
       "avg_ticket": {
-        "quarter": 14061,
-        "year": 17582
+        "quarter": 15484,
+        "year": 17854
       }
     },
     {
       "name": "Franco Querlim",
-      "close_rate": 0.2941,
+      "close_rate": 0.2885,
       "close_counts": {
         "approved": 15,
-        "demos": 51
+        "demos": 52
       },
-      "sits": 51,
+      "sits": 52,
       "sales": {
         "week": {
           "amount": 3400,
@@ -223,37 +223,37 @@
     }
   ],
   "team": {
-    "close_rate": 0.2784,
+    "close_rate": 0.278,
     "close_counts": {
-      "approved": 81,
-      "demos": 291
+      "approved": 82,
+      "demos": 295
     },
-    "sits": 291,
+    "sits": 295,
     "sales": {
       "week": {
-        "amount": 80438,
-        "count": 6
+        "amount": 101939,
+        "count": 7
       },
       "month": {
-        "amount": 231571,
-        "count": 14
+        "amount": 253071,
+        "count": 15
       },
       "quarter": {
-        "amount": 1348970,
-        "count": 78
+        "amount": 1370470,
+        "count": 79
       },
       "year": {
-        "amount": 6808553,
-        "count": 377
+        "amount": 6830053,
+        "count": 378
       }
     },
     "gp": {
-      "amount": 1952026,
-      "pct": 0.3563
+      "amount": 1952526,
+      "pct": 0.3564
     },
     "avg_ticket": {
-      "quarter": 17294,
-      "year": 18060
+      "quarter": 17348,
+      "year": 18069
     }
   }
 }
