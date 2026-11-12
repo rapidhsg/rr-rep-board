@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-11T17:03:59-05:00",
+  "updated": "2026-11-12T05:04:27-05:00",
   "periods": {
     "week": "Nov 9 \u2013 Nov 15",
     "month": "November",
@@ -153,12 +153,12 @@
     },
     {
       "name": "Daniel Leverich",
-      "close_rate": 0.1875,
+      "close_rate": 0.1765,
       "close_counts": {
         "approved": 3,
-        "demos": 16
+        "demos": 17
       },
-      "sits": 16,
+      "sits": 17,
       "sales": {
         "week": {
           "amount": 20000,
@@ -223,12 +223,12 @@
     }
   ],
   "team": {
-    "close_rate": 0.2793,
+    "close_rate": 0.2784,
     "close_counts": {
       "approved": 81,
-      "demos": 290
+      "demos": 291
     },
-    "sits": 290,
+    "sits": 291,
     "sales": {
       "week": {
         "amount": 80438,
