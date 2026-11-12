@@ -192,10 +192,16 @@ function render(d) {
   $("board").innerHTML = h + "</tbody>";
 }
 
-fetch("data/reps.json", { cache: "no-store" })
-  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(render)
-  .catch(() => { $("board").innerHTML = "<tbody><tr><td class='metric'>Couldn't load data/reps.json. Check that this morning's refresh job ran.</td></tr></tbody>"; });
+let loaded = false;
+function load() {
+  fetch("data/reps.json?t=" + Date.now(), { cache: "no-store" })
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => { render(d); loaded = true; })
+    .catch(() => { if (!loaded) $("board").innerHTML = "<tbody><tr><td class='metric'>Couldn't load data/reps.json. Check that this morning's refresh job ran.</td></tr></tbody>"; });
+}
+load();
+setInterval(load, 5 * 60 * 1000);   // re-check for new numbers every 5 minutes, no page reload needed
+document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
 </script>
 </body>
 </html>
