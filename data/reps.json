@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-13T17:04:01-05:00",
+  "updated": "2026-11-14T05:04:13-05:00",
   "periods": {
     "week": "Nov 9 \u2013 Nov 15",
     "month": "November",
@@ -56,19 +56,19 @@
       "sits": 36,
       "sales": {
         "week": {
-          "amount": 29169,
+          "amount": 49338,
           "count": 4
         },
         "month": {
-          "amount": 29169,
+          "amount": 49338,
           "count": 4
         },
         "quarter": {
-          "amount": 264351,
+          "amount": 284520,
           "count": 18
         },
         "year": {
-          "amount": 2262911,
+          "amount": 2283080,
           "count": 93
         }
       },
@@ -77,8 +77,8 @@
         "pct": 0.3589
       },
       "avg_ticket": {
-        "quarter": 14686,
-        "year": 24332
+        "quarter": 15807,
+        "year": 24549
       }
     },
     {
@@ -231,19 +231,19 @@
     "sits": 308,
     "sales": {
       "week": {
-        "amount": 140278,
+        "amount": 160447,
         "count": 13
       },
       "month": {
-        "amount": 291411,
+        "amount": 311580,
         "count": 21
       },
       "quarter": {
-        "amount": 1408810,
+        "amount": 1428979,
         "count": 85
       },
       "year": {
-        "amount": 6868393,
+        "amount": 6888562,
         "count": 384
       }
     },
@@ -252,8 +252,8 @@
       "pct": 0.3564
     },
     "avg_ticket": {
-      "quarter": 16574,
-      "year": 17886
+      "quarter": 16812,
+      "year": 17939
     }
   }
 }
