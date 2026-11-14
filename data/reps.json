@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-14T11:04:13-05:00",
+  "updated": "2026-11-14T14:04:03-05:00",
   "periods": {
     "week": "Nov 9 \u2013 Nov 15",
     "month": "November",
@@ -83,12 +83,12 @@
     },
     {
       "name": "Joe Young",
-      "close_rate": 0.1772,
+      "close_rate": 0.175,
       "close_counts": {
         "approved": 14,
-        "demos": 79
+        "demos": 80
       },
-      "sits": 79,
+      "sits": 80,
       "sales": {
         "week": {
           "amount": 43939,
@@ -153,12 +153,12 @@
     },
     {
       "name": "Daniel Leverich",
-      "close_rate": 0.2632,
+      "close_rate": 0.25,
       "close_counts": {
         "approved": 5,
-        "demos": 19
+        "demos": 20
       },
-      "sits": 19,
+      "sits": 20,
       "sales": {
         "week": {
           "amount": 31692,
@@ -223,12 +223,12 @@
     }
   ],
   "team": {
-    "close_rate": 0.2871,
+    "close_rate": 0.2853,
     "close_counts": {
       "approved": 89,
-      "demos": 310
+      "demos": 312
     },
-    "sits": 310,
+    "sits": 312,
     "sales": {
       "week": {
         "amount": 167298,
