@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-14T14:04:03-05:00",
+  "updated": "2026-11-14T17:03:55-05:00",
   "periods": {
     "week": "Nov 9 \u2013 Nov 15",
     "month": "November",
@@ -83,12 +83,12 @@
     },
     {
       "name": "Joe Young",
-      "close_rate": 0.175,
+      "close_rate": 0.1728,
       "close_counts": {
         "approved": 14,
-        "demos": 80
+        "demos": 81
       },
-      "sits": 80,
+      "sits": 81,
       "sales": {
         "week": {
           "amount": 43939,
@@ -118,12 +118,12 @@
     },
     {
       "name": "Franco Querlim",
-      "close_rate": 0.2727,
+      "close_rate": 0.2679,
       "close_counts": {
         "approved": 15,
-        "demos": 55
+        "demos": 56
       },
-      "sits": 55,
+      "sits": 56,
       "sales": {
         "week": {
           "amount": 3400,
@@ -188,12 +188,12 @@
     },
     {
       "name": "Leomar Santana",
-      "close_rate": 0.1481,
+      "close_rate": 0.1429,
       "close_counts": {
         "approved": 4,
-        "demos": 27
+        "demos": 28
       },
-      "sits": 27,
+      "sits": 28,
       "sales": {
         "week": {
           "amount": 30330,
@@ -223,12 +223,12 @@
     }
   ],
   "team": {
-    "close_rate": 0.2853,
+    "close_rate": 0.2825,
     "close_counts": {
       "approved": 89,
-      "demos": 312
+      "demos": 315
     },
-    "sits": 312,
+    "sits": 315,
     "sales": {
       "week": {
         "amount": 167298,
