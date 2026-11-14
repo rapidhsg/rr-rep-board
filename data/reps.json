@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-14T08:04:03-05:00",
+  "updated": "2026-11-14T11:04:13-05:00",
   "periods": {
     "week": "Nov 9 \u2013 Nov 15",
     "month": "November",
@@ -83,12 +83,12 @@
     },
     {
       "name": "Joe Young",
-      "close_rate": 0.1795,
+      "close_rate": 0.1772,
       "close_counts": {
         "approved": 14,
-        "demos": 78
+        "demos": 79
       },
-      "sits": 78,
+      "sits": 79,
       "sales": {
         "week": {
           "amount": 43939,
@@ -118,12 +118,12 @@
     },
     {
       "name": "Franco Querlim",
-      "close_rate": 0.2778,
+      "close_rate": 0.2727,
       "close_counts": {
         "approved": 15,
-        "demos": 54
+        "demos": 55
       },
-      "sits": 54,
+      "sits": 55,
       "sales": {
         "week": {
           "amount": 3400,
@@ -153,28 +153,28 @@
     },
     {
       "name": "Daniel Leverich",
-      "close_rate": 0.2105,
+      "close_rate": 0.2632,
       "close_counts": {
-        "approved": 4,
+        "approved": 5,
         "demos": 19
       },
       "sits": 19,
       "sales": {
         "week": {
-          "amount": 24840,
-          "count": 2
-        },
-        "month": {
-          "amount": 56133,
+          "amount": 31692,
           "count": 3
         },
-        "quarter": {
-          "amount": 85136,
+        "month": {
+          "amount": 62985,
           "count": 4
         },
+        "quarter": {
+          "amount": 91987,
+          "count": 5
+        },
         "year": {
-          "amount": 85136,
-          "count": 4
+          "amount": 91987,
+          "count": 5
         }
       },
       "gp": {
@@ -182,8 +182,8 @@
         "pct": 0
       },
       "avg_ticket": {
-        "quarter": 21284,
-        "year": 21284
+        "quarter": 18397,
+        "year": 18397
       }
     },
     {
@@ -223,28 +223,28 @@
     }
   ],
   "team": {
-    "close_rate": 0.2857,
+    "close_rate": 0.2871,
     "close_counts": {
-      "approved": 88,
-      "demos": 308
+      "approved": 89,
+      "demos": 310
     },
-    "sits": 308,
+    "sits": 310,
     "sales": {
       "week": {
-        "amount": 160447,
-        "count": 13
+        "amount": 167298,
+        "count": 14
       },
       "month": {
-        "amount": 311580,
-        "count": 21
+        "amount": 318431,
+        "count": 22
       },
       "quarter": {
-        "amount": 1428979,
-        "count": 85
+        "amount": 1435830,
+        "count": 86
       },
       "year": {
-        "amount": 6888562,
-        "count": 384
+        "amount": 6895413,
+        "count": 385
       }
     },
     "gp": {
@@ -252,8 +252,8 @@
       "pct": 0.3564
     },
     "avg_ticket": {
-      "quarter": 16812,
-      "year": 17939
+      "quarter": 16696,
+      "year": 17910
     }
   }
 }
