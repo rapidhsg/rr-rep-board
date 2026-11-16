@@ -64,21 +64,21 @@
           "count": 4
         },
         "quarter": {
-          "amount": 284520,
-          "count": 18
+          "amount": 278125,
+          "count": 17
         },
         "year": {
-          "amount": 2283080,
-          "count": 93
+          "amount": 2276684,
+          "count": 92
         }
       },
       "gp": {
-        "amount": 560664,
-        "pct": 0.3589
+        "amount": 558639,
+        "pct": 0.3591
       },
       "avg_ticket": {
-        "quarter": 15807,
-        "year": 24549
+        "quarter": 16360,
+        "year": 24747
       }
     },
     {
@@ -239,21 +239,21 @@
         "count": 22
       },
       "quarter": {
-        "amount": 1435830,
-        "count": 86
+        "amount": 1429435,
+        "count": 85
       },
       "year": {
-        "amount": 6895413,
-        "count": 385
+        "amount": 6889018,
+        "count": 384
       }
     },
     "gp": {
-      "amount": 1952524,
-      "pct": 0.3564
+      "amount": 1950500,
+      "pct": 0.3565
     },
     "avg_ticket": {
-      "quarter": 16696,
-      "year": 17910
+      "quarter": 16817,
+      "year": 17940
     }
   }
 }
