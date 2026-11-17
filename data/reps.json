@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-17T08:04:13-05:00",
+  "updated": "2026-11-17T11:04:07-05:00",
   "periods": {
     "week": "Nov 16 \u2013 Nov 22",
     "month": "November",
@@ -13,28 +13,28 @@
   "reps": [
     {
       "name": "Mike Dietrich",
-      "close_rate": 0.3814,
+      "close_rate": 0.3918,
       "close_counts": {
-        "approved": 37,
+        "approved": 38,
         "demos": 97
       },
       "sits": 97,
       "sales": {
         "week": {
-          "amount": 36700,
-          "count": 3
+          "amount": 54188,
+          "count": 4
         },
         "month": {
-          "amount": 109684,
-          "count": 8
+          "amount": 127172,
+          "count": 9
         },
         "quarter": {
-          "amount": 620104,
-          "count": 35
+          "amount": 637592,
+          "count": 36
         },
         "year": {
-          "amount": 3065070,
-          "count": 203
+          "amount": 3082558,
+          "count": 204
         }
       },
       "gp": {
@@ -42,18 +42,18 @@
         "pct": 0.3625
       },
       "avg_ticket": {
-        "quarter": 17717,
-        "year": 15099
+        "quarter": 17711,
+        "year": 15111
       }
     },
     {
       "name": "Francesco Ambrosio",
-      "close_rate": 0.4722,
+      "close_rate": 0.4595,
       "close_counts": {
         "approved": 17,
-        "demos": 36
+        "demos": 37
       },
-      "sits": 36,
+      "sits": 37,
       "sales": {
         "week": {
           "amount": 0,
@@ -223,28 +223,28 @@
     }
   ],
   "team": {
-    "close_rate": 0.2941,
+    "close_rate": 0.2963,
     "close_counts": {
-      "approved": 95,
-      "demos": 323
+      "approved": 96,
+      "demos": 324
     },
-    "sits": 323,
+    "sits": 324,
     "sales": {
       "week": {
-        "amount": 59849,
-        "count": 6
+        "amount": 77338,
+        "count": 7
       },
       "month": {
-        "amount": 378280,
-        "count": 28
+        "amount": 395769,
+        "count": 29
       },
       "quarter": {
-        "amount": 1489284,
-        "count": 91
+        "amount": 1506773,
+        "count": 92
       },
       "year": {
-        "amount": 6948867,
-        "count": 390
+        "amount": 6966355,
+        "count": 391
       }
     },
     "gp": {
@@ -252,8 +252,8 @@
       "pct": 0.3564
     },
     "avg_ticket": {
-      "quarter": 16366,
-      "year": 17818
+      "quarter": 16378,
+      "year": 17817
     }
   }
 }
