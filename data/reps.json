@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-16T17:03:59-05:00",
+  "updated": "2026-11-17T05:04:22-05:00",
   "periods": {
     "week": "Nov 16 \u2013 Nov 22",
     "month": "November",
@@ -38,7 +38,7 @@
         }
       },
       "gp": {
-        "amount": 1001091,
+        "amount": 1001096,
         "pct": 0.3625
       },
       "avg_ticket": {
@@ -73,7 +73,7 @@
         }
       },
       "gp": {
-        "amount": 558654,
+        "amount": 558675,
         "pct": 0.3591
       },
       "avg_ticket": {
@@ -108,8 +108,8 @@
         }
       },
       "gp": {
-        "amount": 332659,
-        "pct": 0.3324
+        "amount": 332824,
+        "pct": 0.3325
       },
       "avg_ticket": {
         "quarter": 15138,
@@ -143,8 +143,8 @@
         }
       },
       "gp": {
-        "amount": 57714,
-        "pct": 0.3759
+        "amount": 57805,
+        "pct": 0.3764
       },
       "avg_ticket": {
         "quarter": 14954,
@@ -248,7 +248,7 @@
       }
     },
     "gp": {
-      "amount": 1950118,
+      "amount": 1950400,
       "pct": 0.3564
     },
     "avg_ticket": {
