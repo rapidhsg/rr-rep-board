@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-18T14:04:05-05:00",
+  "updated": "2026-11-18T17:03:53-05:00",
   "periods": {
     "week": "Nov 16 \u2013 Nov 22",
     "month": "November",
@@ -29,11 +29,11 @@
           "count": 11
         },
         "quarter": {
-          "amount": 677598,
+          "amount": 679268,
           "count": 38
         },
         "year": {
-          "amount": 3122564,
+          "amount": 3124234,
           "count": 206
         }
       },
@@ -42,34 +42,34 @@
         "pct": 0.3621
       },
       "avg_ticket": {
-        "quarter": 17832,
-        "year": 15158
+        "quarter": 17875,
+        "year": 15166
       }
     },
     {
       "name": "Francesco Ambrosio",
-      "close_rate": 0.4359,
+      "close_rate": 0.4615,
       "close_counts": {
-        "approved": 17,
+        "approved": 18,
         "demos": 39
       },
       "sits": 39,
       "sales": {
         "week": {
-          "amount": 0,
-          "count": 0
+          "amount": 35614,
+          "count": 1
         },
         "month": {
-          "amount": 49338,
-          "count": 4
+          "amount": 84953,
+          "count": 5
         },
         "quarter": {
-          "amount": 278125,
-          "count": 17
+          "amount": 313739,
+          "count": 18
         },
         "year": {
-          "amount": 2276684,
-          "count": 92
+          "amount": 2312299,
+          "count": 93
         }
       },
       "gp": {
@@ -77,8 +77,8 @@
         "pct": 0.3589
       },
       "avg_ticket": {
-        "quarter": 16360,
-        "year": 24747
+        "quarter": 17430,
+        "year": 24863
       }
     },
     {
@@ -118,12 +118,12 @@
     },
     {
       "name": "Franco Querlim",
-      "close_rate": 0.2712,
+      "close_rate": 0.2667,
       "close_counts": {
         "approved": 16,
-        "demos": 59
+        "demos": 60
       },
-      "sits": 59,
+      "sits": 60,
       "sales": {
         "week": {
           "amount": 0,
@@ -153,27 +153,27 @@
     },
     {
       "name": "Daniel Leverich",
-      "close_rate": 0.3182,
+      "close_rate": 0.3043,
       "close_counts": {
         "approved": 7,
-        "demos": 22
+        "demos": 23
       },
-      "sits": 22,
+      "sits": 23,
       "sales": {
         "week": {
-          "amount": 12509,
+          "amount": 19448,
           "count": 2
         },
         "month": {
-          "amount": 75494,
+          "amount": 82432,
           "count": 6
         },
         "quarter": {
-          "amount": 104497,
+          "amount": 111435,
           "count": 7
         },
         "year": {
-          "amount": 104497,
+          "amount": 111435,
           "count": 7
         }
       },
@@ -182,8 +182,8 @@
         "pct": 0.4495
       },
       "avg_ticket": {
-        "quarter": 14928,
-        "year": 14928
+        "quarter": 15919,
+        "year": 15919
       }
     },
     {
@@ -223,28 +223,28 @@
     }
   ],
   "team": {
-    "close_rate": 0.2982,
+    "close_rate": 0.2994,
     "close_counts": {
-      "approved": 99,
-      "demos": 332
+      "approved": 100,
+      "demos": 334
     },
-    "sits": 332,
+    "sits": 334,
     "sales": {
       "week": {
-        "amount": 116404,
-        "count": 10
+        "amount": 158956,
+        "count": 11
       },
       "month": {
-        "amount": 434835,
-        "count": 32
+        "amount": 477387,
+        "count": 33
       },
       "quarter": {
-        "amount": 1546779,
-        "count": 95
+        "amount": 1591001,
+        "count": 96
       },
       "year": {
-        "amount": 7006361,
-        "count": 394
+        "amount": 7050584,
+        "count": 395
       }
     },
     "gp": {
@@ -252,8 +252,8 @@
       "pct": 0.3569
     },
     "avg_ticket": {
-      "quarter": 16282,
-      "year": 17783
+      "quarter": 16573,
+      "year": 17850
     }
   }
 }
