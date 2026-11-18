@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-17T17:03:57-05:00",
+  "updated": "2026-11-18T05:04:29-05:00",
   "periods": {
     "week": "Nov 16 \u2013 Nov 22",
     "month": "November",
@@ -178,8 +178,8 @@
         }
       },
       "gp": {
-        "amount": 0,
-        "pct": 0
+        "amount": 13036,
+        "pct": 0.4495
       },
       "avg_ticket": {
         "quarter": 14928,
@@ -248,8 +248,8 @@
       }
     },
     "gp": {
-      "amount": 2018589,
-      "pct": 0.3565
+      "amount": 2031624,
+      "pct": 0.3569
     },
     "avg_ticket": {
       "quarter": 16280,
