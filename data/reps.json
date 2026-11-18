@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-18T11:04:15-05:00",
+  "updated": "2026-11-18T14:04:05-05:00",
   "periods": {
     "week": "Nov 16 \u2013 Nov 22",
     "month": "November",
@@ -13,28 +13,28 @@
   "reps": [
     {
       "name": "Mike Dietrich",
-      "close_rate": 0.398,
+      "close_rate": 0.4082,
       "close_counts": {
-        "approved": 39,
+        "approved": 40,
         "demos": 98
       },
       "sits": 98,
       "sales": {
         "week": {
-          "amount": 76838,
-          "count": 5
+          "amount": 93254,
+          "count": 6
         },
         "month": {
-          "amount": 149822,
-          "count": 10
+          "amount": 166238,
+          "count": 11
         },
         "quarter": {
-          "amount": 661182,
-          "count": 37
+          "amount": 677598,
+          "count": 38
         },
         "year": {
-          "amount": 3106148,
-          "count": 205
+          "amount": 3122564,
+          "count": 206
         }
       },
       "gp": {
@@ -42,8 +42,8 @@
         "pct": 0.3621
       },
       "avg_ticket": {
-        "quarter": 17870,
-        "year": 15152
+        "quarter": 17832,
+        "year": 15158
       }
     },
     {
@@ -223,28 +223,28 @@
     }
   ],
   "team": {
-    "close_rate": 0.2952,
+    "close_rate": 0.2982,
     "close_counts": {
-      "approved": 98,
+      "approved": 99,
       "demos": 332
     },
     "sits": 332,
     "sales": {
       "week": {
-        "amount": 99987,
-        "count": 9
+        "amount": 116404,
+        "count": 10
       },
       "month": {
-        "amount": 418418,
-        "count": 31
+        "amount": 434835,
+        "count": 32
       },
       "quarter": {
-        "amount": 1530362,
-        "count": 94
+        "amount": 1546779,
+        "count": 95
       },
       "year": {
-        "amount": 6989945,
-        "count": 393
+        "amount": 7006361,
+        "count": 394
       }
     },
     "gp": {
@@ -252,8 +252,8 @@
       "pct": 0.3569
     },
     "avg_ticket": {
-      "quarter": 16280,
-      "year": 17786
+      "quarter": 16282,
+      "year": 17783
     }
   }
 }
