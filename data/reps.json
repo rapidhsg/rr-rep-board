@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-18T08:04:25-05:00",
+  "updated": "2026-11-18T11:04:15-05:00",
   "periods": {
     "week": "Nov 16 \u2013 Nov 22",
     "month": "November",
@@ -118,12 +118,12 @@
     },
     {
       "name": "Franco Querlim",
-      "close_rate": 0.2759,
+      "close_rate": 0.2712,
       "close_counts": {
         "approved": 16,
-        "demos": 58
+        "demos": 59
       },
-      "sits": 58,
+      "sits": 59,
       "sales": {
         "week": {
           "amount": 0,
@@ -223,12 +223,12 @@
     }
   ],
   "team": {
-    "close_rate": 0.2961,
+    "close_rate": 0.2952,
     "close_counts": {
       "approved": 98,
-      "demos": 331
+      "demos": 332
     },
-    "sits": 331,
+    "sits": 332,
     "sales": {
       "week": {
         "amount": 99987,
