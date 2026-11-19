@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updated": "2026-11-18T17:03:53-05:00",
+  "updated": "2026-11-19T05:04:28-05:00",
   "periods": {
     "week": "Nov 16 \u2013 Nov 22",
     "month": "November",
@@ -33,8 +33,8 @@
           "count": 38
         },
         "year": {
-          "amount": 3124234,
-          "count": 206
+          "amount": 3120134,
+          "count": 205
         }
       },
       "gp": {
@@ -43,7 +43,7 @@
       },
       "avg_ticket": {
         "quarter": 17875,
-        "year": 15166
+        "year": 15220
       }
     },
     {
@@ -83,28 +83,28 @@
     },
     {
       "name": "Joe Young",
-      "close_rate": 0.1786,
+      "close_rate": 0.1905,
       "close_counts": {
-        "approved": 15,
+        "approved": 16,
         "demos": 84
       },
       "sits": 84,
       "sales": {
         "week": {
-          "amount": 10640,
-          "count": 1
+          "amount": 18025,
+          "count": 2
         },
         "month": {
-          "amount": 81779,
-          "count": 6
+          "amount": 89164,
+          "count": 7
         },
         "quarter": {
-          "amount": 211935,
-          "count": 14
+          "amount": 219320,
+          "count": 15
         },
         "year": {
-          "amount": 1224742,
-          "count": 69
+          "amount": 1232127,
+          "count": 70
         }
       },
       "gp": {
@@ -112,8 +112,8 @@
         "pct": 0.3331
       },
       "avg_ticket": {
-        "quarter": 15138,
-        "year": 17750
+        "quarter": 14621,
+        "year": 17602
       }
     },
     {
@@ -126,19 +126,19 @@
       "sits": 60,
       "sales": {
         "week": {
-          "amount": 0,
+          "amount": 19231,
           "count": 1
         },
         "month": {
-          "amount": 31655,
+          "amount": 50886,
           "count": 3
         },
         "quarter": {
-          "amount": 239257,
+          "amount": 258488,
           "count": 16
         },
         "year": {
-          "amount": 242507,
+          "amount": 261738,
           "count": 17
         }
       },
@@ -147,8 +147,8 @@
         "pct": 0.3764
       },
       "avg_ticket": {
-        "quarter": 14954,
-        "year": 14265
+        "quarter": 16156,
+        "year": 15396
       }
     },
     {
@@ -188,28 +188,28 @@
     },
     {
       "name": "Leomar Santana",
-      "close_rate": 0.1333,
+      "close_rate": 0.1667,
       "close_counts": {
-        "approved": 4,
+        "approved": 5,
         "demos": 30
       },
       "sits": 30,
       "sales": {
         "week": {
-          "amount": 0,
-          "count": 0
+          "amount": 15238,
+          "count": 1
         },
         "month": {
-          "amount": 30330,
-          "count": 2
+          "amount": 45568,
+          "count": 3
         },
         "quarter": {
-          "amount": 35367,
-          "count": 3
+          "amount": 50605,
+          "count": 4
         },
         "year": {
-          "amount": 35367,
-          "count": 3
+          "amount": 50605,
+          "count": 4
         }
       },
       "gp": {
@@ -217,34 +217,34 @@
         "pct": 0
       },
       "avg_ticket": {
-        "quarter": 11789,
-        "year": 11789
+        "quarter": 12651,
+        "year": 12651
       }
     }
   ],
   "team": {
-    "close_rate": 0.2994,
+    "close_rate": 0.3054,
     "close_counts": {
-      "approved": 100,
+      "approved": 102,
       "demos": 334
     },
     "sits": 334,
     "sales": {
       "week": {
-        "amount": 158956,
-        "count": 11
+        "amount": 200810,
+        "count": 13
       },
       "month": {
-        "amount": 477387,
-        "count": 33
+        "amount": 519241,
+        "count": 35
       },
       "quarter": {
-        "amount": 1591001,
-        "count": 96
+        "amount": 1632855,
+        "count": 98
       },
       "year": {
-        "amount": 7050584,
-        "count": 395
+        "amount": 7088338,
+        "count": 396
       }
     },
     "gp": {
@@ -252,8 +252,8 @@
       "pct": 0.3569
     },
     "avg_ticket": {
-      "quarter": 16573,
-      "year": 17850
+      "quarter": 16662,
+      "year": 17900
     }
   }
 }
